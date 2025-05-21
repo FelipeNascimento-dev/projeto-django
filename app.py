@@ -12,7 +12,7 @@ def load_data(start_date=None, end_date=None, product=None):
         params['end_date'] = end_date
     if product:
         params['product'] = product
-
+#teste
     response = requests.get(url, params=params)
     data = response.json()
     if isinstance(data, list):
